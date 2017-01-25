@@ -1,7 +1,7 @@
 language: android
 
-#before_install:
-    - chmod +rwx gradlew
+before_install:
+    chmod +x gradlew
    
 
 android:
@@ -34,7 +34,7 @@ script:
     - "./gradlew build"
 
     # Uncomment and specify the correct key for integration into Slack    
-#notifications:
-  #slack: ict2105:PNXMGobtKXUUl2Gvq3jVhyU0
+notifications:
+  slack: ict2105:PNXMGobtKXUUl2Gvq3jVhyU0
 
   
